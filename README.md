@@ -201,15 +201,37 @@ print(refactored_code)
 4. **Proper label masking is critical** - Only compute loss on output tokens, not input
 5. **Evaluation timing matters** - Wait until after warmup for stable metrics
 
+## 🎓 Academic Context
+
+This project was developed for DS340 at Boston University by Liam Ben-Zvi and Aryan Lunkad.
+
+### Key Contributions:
+1. Novel benchmark-optimized data collection strategy with 39,812 enhanced training samples
+2. Comprehensive debugging and fixing of critical training issues (data collator, label smoothing, precision handling)
+3. Systematic analysis of LoRA fine-tuning achieving strong performance (0.49 validation loss, 72 BLEU, 0.90 similarity)
+4. Complete documentation of training methodology and troubleshooting approaches
+
+## 📄 Citation
+```bibtex
+@misc{refactotron2024,
+  author = {Ben-Zvi, Liam and Lunkad, Aryan},
+  title = {Refactotron: Automated Code Refactoring with Fine-tuned Language Models},
+  year = {2024},
+  publisher = {GitHub},
+  url = {https://github.com/lbenzvi/refactotron}
+}
+```
+
 ## 📄 License
 
-MIT License
+MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
 - **Base Model**: [StarCoder](https://huggingface.co/bigcode/starcoderbase-1b) by BigCode
 - **LoRA Implementation**: [PEFT](https://github.com/huggingface/peft) by HuggingFace
 - **Training Framework**: [Transformers](https://github.com/huggingface/transformers) by HuggingFace
+- **Boston University SCC** for computational resources
 
 ## 📧 Contact
 
