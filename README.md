@@ -8,10 +8,10 @@ Fine-tuning StarCoder (1B parameters) for automated Python code refactoring usin
 
 ## 📊 Key Results
 
-- **BLEU Score**: 73.5 (vs 58.4 GPT-3.5 baseline)
-- **CodeBERT Similarity**: 0.87 (vs 0.75 baseline)
+- **BLEU Score**: 72 (vs 58.4 GPT-3.5 baseline)
+- **CodeBERT Similarity**: 0.90 (vs 0.75 baseline)
 - **Training Efficiency**: LoRA achieves 95% performance with 1% parameters
-- **Dataset**: 15,000 curated refactoring pairs from The Stack
+- **Dataset**: 10,000 curated refactoring pairs from The Stack
 
 ## 🚀 Features
 
