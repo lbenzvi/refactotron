@@ -6,8 +6,8 @@ A fine-tuned code refactoring model built on StarCoder-1B using LoRA (Low-Rank A
 
 **Final Model Performance:**
 - **Validation Loss**: 0.49
-- **BLEU Score**: 72
-- **Semantic Similarity**: 0.90
+- **BLEU Score**: 53.4
+- **Semantic Similarity**: 0.99
 
 These metrics demonstrate strong performance in generating semantically correct and syntactically accurate refactored code.
 
