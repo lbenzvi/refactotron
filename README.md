@@ -88,7 +88,7 @@ labels = [-100] * len(inp_ids) + out_ids
 
 ```
 refactotron/
-├── refactotron_training_FINAL_OPTIMIZED_FIXED.ipynb  # Final working training notebook
+├── refactotron_training.ipynb  # Final working training notebook
 ├── create_training_data_fixed.py                      # Data preparation script
 ├── enhanced_data_generation.ipynb                     # Enhanced dataset generation
 ├── data/                                              # Training data directory
