@@ -1,8 +1,8 @@
-# Training Configuration Changes - Version 2
+# Training Configuration
 
 ## Summary
 
-This document describes the configuration fixes applied to create `refactotron_training_v2.ipynb` from the previous training notebooks. The changes address critical issues that were limiting model performance and training stability.
+This document describes the configuration fixes applied to create `refactotron_training.ipynb` from the previous training notebooks. The changes address critical issues that were limiting model performance and training stability.
 
 ## Changes Applied
 
@@ -29,19 +29,3 @@ Eliminated label smoothing as it is incompatible with masked labels (-100 paddin
 **Current:** `eval_steps=1000`, added `eval_accumulation_steps=4` and `fp16_full_eval=False`
 
 Adjusted evaluation to occur after warmup period completes, added gradient accumulation during evaluation for memory efficiency, and disabled FP16 for evaluation to prevent numerical instability.
-
-## Expected Impact
-
-**Previous validation loss:** 0.637
-**Target validation loss:** 0.48-0.55
-**Expected improvement:** Approximately 30% reduction in validation loss
-
-## Files
-
-- **Training notebook:** `refactotron_training_v2.ipynb`
-- **Data files:** `train_enhanced.jsonl`, `validation_enhanced.jsonl` (unchanged)
-- **Previous versions:** Retained for reference
-
-## Next Steps
-
-Upload `refactotron_training_v2.ipynb` to Google Colab and train with the corrected configuration to achieve improved performance.
